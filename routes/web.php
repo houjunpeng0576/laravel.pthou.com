@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->middleware('token');
 
 Route::post('hi', function () {
     return 'this is post method';
