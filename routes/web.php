@@ -55,3 +55,7 @@ Route::group(['prefix' => 'news'],function(){
         'as' => 'news-info',
     ])->where('id','\d+');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
