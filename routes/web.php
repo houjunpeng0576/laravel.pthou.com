@@ -59,3 +59,6 @@ Route::group(['prefix' => 'news'],function(){
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//TestController
+Route::get('test/add','TestController@add');
